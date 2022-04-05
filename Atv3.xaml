@@ -1,0 +1,50 @@
+﻿<Window x:Class="atv1_AGORA_VAI.Atv3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:atv1_AGORA_VAI"
+        mc:Ignorable="d"
+        Title="Atv3" Height="488" Width="883">
+    <Grid Background="#FF9791C8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Cadastro de Usuário" FontSize="26" Margin="0 20" HorizontalAlignment="Center"></Label>
+        <Grid Background="#FF9791C8" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="20 0">
+                <Label Grid.Column="1" Content="Dados Pessoais" FontSize="26"/>
+                <Label Content="Nome"/>
+                <TextBox x:Name="txtNome" Padding="6"/>
+                <Label Content="Data de Nascimento"/>
+                <DatePicker x:Name="dataNascimento" Padding="6"/>
+                <Label Content="CPF"/>
+                <TextBox x:Name="txtCPF" Padding="6"/>
+                <Label Content="RG"/>
+                <TextBox x:Name="txtRG" Padding="6"/>
+                <Label Content=""/>
+                <Button x:Name="bttInfo" Content="!" Width="20" Click="bttInfo_Click" />
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="20 0" >
+                <Label Content="Dados de Endereço" FontSize="26"/>
+                <Label Content="Cidade"/>
+                <TextBox x:Name="txtCid" Padding="6"/>
+                <Label Content="CEP"/>
+                <TextBox x:Name="txtCEP" Padding="6"/>
+                <Label Content="Número:"/>
+                <TextBox x:Name="txtNum" Padding="6"/>
+                <Label Content="Bairro:"/>
+                <TextBox x:Name="txtBai" Padding="6"/>
+                <Label Content=""/>
+                <Button x:Name="bttSair" Content="Sair" Width="74" Click="bttSair_Click" Height="40"  />
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

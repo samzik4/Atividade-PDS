@@ -1,0 +1,47 @@
+﻿<Window x:Class="atv1_AGORA_VAI.MainWindow"
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:atv1_AGORA_VAI"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="450" Width="800" Icon="/imagens/unnamed.png">
+    <Grid Background="#FF9791C8">
+        <Rectangle HorizontalAlignment="Center" Height="356" Stroke="Black" VerticalAlignment="Center" Width="451" RadiusX="30.84" RadiusY="30.84" Fill="#FFE7D5EA"/>
+        <Button x:Name="btt_exit" Content="" HorizontalAlignment="Left" Height="37" Margin="703,358,0,0" VerticalAlignment="Top" Width="30" BorderBrush="{x:Null}" Click="btt_exit_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagens/Exit.png.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txt_cadastro" HorizontalAlignment="Center" Height="26" Margin="0,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Label Content="Login" HorizontalAlignment="Center" Height="28" Margin="0,86,0,0" VerticalAlignment="Top" Width="44" FontWeight="Bold" FontFamily="Arial Unicode MS"/>
+        <Button x:Name="btt_log" Content="Entrar" HorizontalAlignment="Center" Height="25" Margin="0,308,0,0" VerticalAlignment="Top" Width="44" Background="#FFDC95E8" FontFamily="Comic Sans MS" Click="btt_log_Click"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="324,264,0,0" VerticalAlignment="Top" Width="16"/>
+        <Label Content="lembrar senha" HorizontalAlignment="Left" Height="23" Margin="340,258,0,0" VerticalAlignment="Top" Width="99" FontFamily="Comic Sans MS"/>
+        <Label Content="e-mail:" HorizontalAlignment="Left" Height="26" Margin="324,150,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.5,0.5" FontFamily="Comic Sans MS">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.818"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.486"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="senha:" HorizontalAlignment="Left" Height="26" Margin="325,203,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.5,0.5" FontFamily="Comic Sans MS">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.818"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.486"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <PasswordBox x:Name="txt_senha" HorizontalAlignment="Center" Height="25" Margin="0,228,0,0" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="txt_inf" Content="!" HorizontalAlignment="Left" Margin="554,86,0,0" VerticalAlignment="Top" Height="20" Width="24" Click="txt_inf_Click" Background="#FFDC95E8"/>
+        <Button Content="não tem login? clique em mim" HorizontalAlignment="Left" Height="26" Margin="204,350,0,0" VerticalAlignment="Top" Width="186" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE82E2E" Click="Button_Click"/>
+
+    </Grid>
+</Window>
